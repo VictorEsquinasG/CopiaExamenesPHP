@@ -6,6 +6,7 @@
     
     if ((isset($a)) && (isset($b)) && (!empty($a)) && (!empty($b))) // Si no es null ni ''
     {
+        if (is_numeric($a) && is_numeric($b))   // Si son números
         {
             $c= $a + $b;
             $color='violet';
