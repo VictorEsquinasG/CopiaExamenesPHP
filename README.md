@@ -1,2 +1,2 @@
 # CopiaExamenesPHP
-*Programa pensado por el profesor, yo no quiero, me obligan a copiar exámenes de PHP
+*Programa que suma 2 números en PHP*
