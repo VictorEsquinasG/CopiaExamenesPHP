@@ -3,9 +3,10 @@
     $b=$_GET['b'];
     $c='No se pudo realizar la operación';
     
-    if ((isset($a)) && (isset($b)))
+    if ((isset($a)) && (isset($b)) && (!empty($a)) && (!empty($b))) // Si no es null ni ''
     {
-        if ((!empty($a)) && (!empty($b)))
+        // Si es número
+        if (gettype($a) != 'object' && gettype($a) != 'string' && gettype($b) != 'object' && gettype($b) != 'string')
         {
             $c= $a + $b;
         }
